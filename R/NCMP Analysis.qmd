@@ -5,6 +5,7 @@ format:
     grid:
       body-width: 900px
     embed-resources: true
+    output-file: index.html
 toc: true
 editor: visual
 execute: 
@@ -683,7 +684,7 @@ periods <- unique(ncmp_data_3_years_combined$Year)
 periods_short <- sub("/([A-Za-z0-9]+( [A-Za-z0-9]+)+)/", "-", unique(ncmp_data_3_years_combined$Year))
 
 # load participation info list
-load("data/participation_info.rda")
+load("../data/participation_info.rda")
 
 # extract values from list
 fingertips_reception_participants <- participation_info$fingertips_reception_participants
@@ -723,7 +724,7 @@ obese_overweight_all_birmingham_y6_upper_ci <- obese_overweight_all_birmingham_b
 #| output: false
 #| warning: false
 
-load("data/england_data_3_years_combined.rda")
+load("../data/england_data_3_years_combined.rda")
 ```
 
 This report was produced by Birmingham Public Health (Knowledge Team). For support or feedback please contact publichealthintelligence\@birmingham.gov.uk
